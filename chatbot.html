@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFF7F0">
+  <title>Reelwala Studio | Create a video</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Yatra+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="chatbot.css">
+</head>
+<body class="studio">
+  <header class="studio__nav">
+    <a class="studio__brand" href="index.html">
+      <img src="reelwala.png" alt="" width="42" height="42">
+      <span>Reelwala <small>STUDIO</small></span>
+    </a>
+    <a class="studio__back" href="index.html">← Back to Reelwala</a>
+  </header>
+
+  <main class="studio__main">
+    <div class="studio__intro">
+      <p class="studio__eyebrow">YOUR NEXT REEL STARTS HERE</p>
+      <h1>Turn your idea into a <span>video.</span></h1>
+      <p>Describe what you want to make, choose a style and format, and generate a short AI video.</p>
+    </div>
+
+    <div class="studio__layout">
+      <form class="creator" id="creatorForm">
+        <label class="creator__label" for="videoPrompt">What should happen in your video?</label>
+        <p class="creator__hint">Include your subject, setting, action, and any words you want shown.</p>
+        <textarea id="videoPrompt" name="prompt" maxlength="1200" placeholder="Example: A cheerful cartoon chef introduces our new mango shake in a bright Indian sweet shop. Add the caption “Summer tastes better!”" required></textarea>
+        <div class="creator__meta"><span id="charCount">0</span>/1200 characters</div>
+
+        <div class="prompt-ideas" aria-label="Prompt ideas">
+          <button type="button" class="prompt-chip" data-prompt="A friendly cartoon doctor shares a simple tip for staying hydrated during summer. Bright clinic, warm tone, clear captions.">🩺 Clinic tip</button>
+          <button type="button" class="prompt-chip" data-prompt="A playful animated shopkeeper introduces a festive special offer in a colorful local sweets shop. Add an inviting call to visit today.">🍬 Shop offer</button>
+          <button type="button" class="prompt-chip" data-prompt="A curious cartoon child discovers an ancient fort and learns one surprising history fact. Make it fun and easy to understand.">🏰 Learning story</button>
+        </div>
+
+        <fieldset class="creator__field">
+          <legend>Visual style</legend>
+          <div class="choice-row" id="styleChoices">
+            <button type="button" class="choice is-selected" data-value="Cartoon" aria-pressed="true">🎨 Cartoon</button>
+            <button type="button" class="choice" data-value="Anime" aria-pressed="false">✨ Anime</button>
+            <button type="button" class="choice" data-value="Product" aria-pressed="false">📦 Product</button>
+          </div>
+          <input type="hidden" name="style" id="selectedStyle" value="Cartoon">
+        </fieldset>
+
+        <div class="creator__options">
+          <label class="creator__field">
+            <span>Video format</span>
+            <select name="format">
+              <option value="Vertical 9:16">Vertical 9:16 · Reels</option>
+              <option value="Square 1:1">Square 1:1 · Feed</option>
+              <option value="Landscape 16:9">Landscape 16:9 · YouTube</option>
+            </select>
+          </label>
+          <label class="creator__field">
+            <span>Length</span>
+            <select name="duration">
+              <option value="73">About 3 seconds</option>
+              <option value="121" selected>About 5 seconds</option>
+              <option value="145">About 6 seconds</option>
+            </select>
+          </label>
+        </div>
+
+        <button class="btn btn--sun creator__submit" type="submit">
+          <span aria-hidden="true">✦</span> Create my video
+        </button>
+        <p class="creator__notice" id="creatorNotice" role="status" aria-live="polite">
+          Connect fal.ai to enable generation: create an API key, copy <code>.env.example</code> to <code>.env</code>, set <code>FAL_KEY</code>, then run <code>npm start</code>. Prompts are sent to fal.ai and usage may incur charges.
+        </p>
+      </form>
+
+      <aside class="preview" aria-label="Video preview">
+        <div class="preview__top"><span>VIDEO PREVIEW</span><span class="preview__badge">STUDIO</span></div>
+        <div class="preview__canvas" id="previewCanvas">
+          <div class="preview__art" aria-hidden="true"><span>🎬</span><i>✦</i><b>✧</b></div>
+          <div class="preview__empty">
+            <span class="preview__play" aria-hidden="true">▶</span>
+            <strong>Your video will appear here</strong>
+            <span>Write a prompt to get started</span>
+          </div>
+          <div class="preview__caption">YOUR STORY, YOUR STYLE</div>
+        </div>
+        <div class="preview__footer">
+          <span>Format <strong id="formatSummary">Vertical 9:16</strong></span>
+          <span>Length <strong id="durationSummary">About 5 seconds</strong></span>
+        </div>
+        <div class="preview__connect" id="serviceStatus"><span aria-hidden="true">●</span> Checking fal.ai connection…</div>
+      </aside>
+    </div>
+  </main>
+  <script src="chatbot.js"></script>
+</body>
+</html>

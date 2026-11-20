@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reelwala | AI videos for your business</title>
+  <meta name="description" content="AI-made cartoon and anime reels for shops, clinics, schools and online sellers. Ready in 48 hours.">
+  <meta name="theme-color" content="#FF718C">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Yatra+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-chat" viewBox="0 0 24 24"><path fill="currentColor" d="M4 3h16a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H9.5L4 22v-4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24">
+      <rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="17.6" cy="6.4" r="1.2" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.6 3.6a1 1 0 0 1-.25 1z"/></symbol>
+  </svg>
+
+  <header class="nav">
+    <div class="wrap nav__in">
+      <a class="brand" href="https://www.instagram.com/reelwala.in.60/" target="_blank" rel="noopener" aria-label="Open Reelwala on Instagram">
+        <img src="reelwala.png" alt="Reelwala" class="brand__mark">
+        <span class="brand__name">Reelwala</span>
+      </a>
+      <div class="nav__tools">
+        <div class="nav__dropdown">
+          <button class="nav__menu" type="button" aria-expanded="false" aria-controls="navMenu">
+            <span>Menu</span>
+            <svg width="14" height="14" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 9l7 7 7-7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="nav__menu-list" id="navMenu">
+            <a href="#demo">Sample reels</a>
+            <a href="#plans">Prices</a>
+            <a href="#how">How it works</a>
+            <a href="#features">What you get</a>
+            <a href="#faq">FAQs</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+        <a class="nav__download" href="reelwala.png" download="Reelwala-logo.png" aria-label="Download Reelwala logo">
+          <svg width="18" height="18" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m0 0l5-5m-5 5l-5-5M5 21h14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Download</span>
+        </a>
+        <a class="btn btn--wa btn--sm" data-wa href="#contact">
+          <svg width="18" height="18" aria-hidden="true"><use href="#i-instagram"/></svg>
+          <span data-i18n="nav_wa">Instagram</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- 1. HERO -->
+    <section class="hero">
+      <div class="wrap hero__in">
+        <div class="hero__text">
+          <h1 class="hero__h1" data-i18n="hero_h1">Get more customers with AI-made videos. Ready in a <a class="hero__click" href="chatbot.html" aria-label="Open chatbot">CLICK</a>.</h1>
+          <p class="hero__sub" data-i18n="hero_sub">Cartoon and anime reels for shops, clinics, schools and online sellers. Follow us on Instagram to get started.</p>
+          <div class="hero__cta">
+            <a class="btn btn--wa" href="https://wa.me/9229526967?text=HEY%THERE!!!" target="_blank" rel="noopener">
+              <svg width="20" height="20" aria-hidden="true"><use href="#i-chat"/></svg>
+              <span data-i18n="cta_wa" data-en="Chat on WhatsApp">Chat on WhatsApp</span>
+            </a>
+            <a class="btn btn--ghost" href="#demo"><span data-i18n="cta_demo">Download APK  </span></a>
+          </div>
+          <ul class="hero__proof">
+            <li data-i18n="proof1">English voice and captions</li>
+            <li data-i18n="proof2">Cartoon or anime style</li>
+            <li data-i18n="proof3">Ready to post on Instagram</li>
+          </ul>
+        </div>
+
+        <!-- Decorative live "reel being made" demo -->
+        <div class="hero__stage" aria-hidden="true">
+          <div class="phone">
+            <div class="phone__screen">
+              <div class="scene s1" id="scene">
+                <span class="scene__art" id="sceneArt" aria-hidden="true">🍬</span>
+                <img src="reelwala.png" alt="Reelwala" class="scene__logo">
+              </div>
+              <div class="gen">
+                <span class="gen__bar"><i class="gen__fill" id="genFill"></i></span>
+                <span id="genTxt"></span>
+              </div>
+              <p class="caption" id="caption"></p>
+            </div>
+          </div>
+          <span class="sticker" data-i18n="sticker">Ready to Post</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. FEATURE SHOWCASE -->
+    <section class="showcase" id="features">
+      <div class="wrap">
+        <div class="showcase__head">
+          <p class="showcase__eyebrow">Built for small businesses</p>
+          <h2 class="sec__h">Everything needed to make scroll-stopping reels</h2>
+        </div>
+
+        <div class="showcase__grid">
+          <article class="tool-card tool-card--lilac">
+            <span class="tool-card__icon" aria-hidden="true">Aa</span>
+            <p class="tool-card__tag">Scripts</p>
+            <h3>Voice-ready scripts</h3>
+            <p>Clear captions and natural English voiceover for your offer, service or lesson.</p>
+          </article>
+
+          <article class="tool-card tool-card--mint">
+            <span class="tool-card__icon" aria-hidden="true">◉</span>
+            <p class="tool-card__tag">Visuals</p>
+            <h3>Custom cartoon scenes</h3>
+            <p>Consistent characters, backgrounds and branded visuals made for your business.</p>
+          </article>
+
+          <article class="tool-card tool-card--hibiscus">
+            <span class="tool-card__icon" aria-hidden="true">▶</span>
+            <p class="tool-card__tag">Post-ready</p>
+            <h3>Fast editing workflow</h3>
+            <p>Music, captions and video polish delivered in a vertical reel format for Instagram.</p>
+          </article>
+        </div>
+
+        <dl class="showcase__stats">
+          <div><dd>48 Hours</dd><dt>Typical delivery</dt></div>
+          <div><dd>9:16</dd><dt>Vertical reel format</dt></div>
+          <div><dd>English</dd><dt>Voice and captions</dt></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- 3. DEMO REEL -->
+    <section class="sec sec--ink" id="demo">
+      <div class="wrap">
+        <h2 class="sec__h" data-i18n="demo_h2">Watch the videos before you pay</h2>
+        <p class="sec__lead" data-i18n="demo_lead">Tap a reel to play it. Each one was made with AI in English.</p>
+        <div class="reels" id="reels"></div>
+      </div>
+    </section>
+
+    <!-- 4. PACKAGES -->
+    <section class="sec sec--lilac" id="plans">
+      <div class="wrap">
+        <h2 class="sec__h" data-i18n="plans_h2">Simple monthly prices</h2>
+        <p class="sec__lead" data-i18n="plans_lead">Pick a plan and pay monthly. Need something different? Message us.</p>
+
+        <div class="plans">
+          <article class="plan">
+            <h3 class="plan__name">Starter</h3>
+            <p class="plan__for" data-i18n="p1_for">For one shop or clinic getting started</p>
+            <p class="plan__price">Free <span class="plan__per" data-i18n="per_month">/month</span></p>
+            <ul class="plan__list">
+              <li data-i18n="p1_f1">8 AI reels every month</li>
+              <li data-i18n="f_voice">English voice and captions</li>
+              <li data-i18n="f_style">Cartoon or anime style</li>
+              <li data-i18n="f_48">Delivered within 48 hours</li>
+            </ul>
+            <a class="btn btn--ghost plan__cta" data-wa data-plan="Starter" href="#contact"><span data-i18n="plan_cta">Start Free Trial</span></a>
+          </article>
+
+          <article class="plan plan--hot">
+            <span class="plan__badge" data-i18n="best_value">Best value</span>
+            <h3 class="plan__name">Growth</h3>
+            <p class="plan__for" data-i18n="p2_for">For businesses that want to post every day</p>
+            <p class="plan__price">₹1,999 <span class="plan__per" data-i18n="per_month">/month</span></p>
+            <ul class="plan__list">
+              <li data-i18n="p2_f1">16 AI reels every month</li>
+              <li data-i18n="p2_f2">Monthly posting calendar</li>
+              <li data-i18n="p2_f3">Festival and offer reels planned ahead</li>
+              <li data-i18n="p2_f4">Everything in Starter</li>
+            </ul>
+            <a class="btn btn--ghost plan__cta" data-wa data-plan="Growth" href="#contact"><span data-i18n="plan_cta">Ask about this plan</span></a>
+          </article>
+
+          <article class="plan">
+            <h3 class="plan__name" data-i18n="p3_name">School pack</h3>
+            <p class="plan__for" data-i18n="p3_for">For schools and tuition centres</p>
+            <p class="plan__price">₹2,999 <span class="plan__per" data-i18n="p3_per">/month</span></p>
+            <ul class="plan__list">
+              <li data-i18n="p3_f1">Lesson videos by subject</li>
+              <li data-i18n="p3_f2">Cartoon lessons for nursery to class 5</li>
+              <li data-i18n="p3_f3">In English</li>
+              <li data-i18n="p3_f4">Play them in class or share with parents</li>
+            </ul>
+            <a class="btn btn--ghost plan__cta" data-wa data-plan="School pack" href="#contact"><span data-i18n="plan_cta">Ask about this plan</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. HOW IT WORKS -->
+    <section class="hiw" id="how">
+      <div class="hiw__wrap">
+        <h2 class="hiw__title">How it works</h2>
+        <p class="hiw__lead">Three steps from your idea to a reel your customers can watch.</p>
+
+        <ol class="hiw__steps">
+          <li class="hiw__step">
+            <span class="hiw__n">1</span>
+            <span class="hiw__icon" aria-hidden="true">💡</span>
+            <h3 class="hiw__step-title">You share your idea</h3>
+            <p class="hiw__text">
+              Visit our <a href="https://www.instagram.com/reelwala.in.60/" target="_blank" rel="noopener">Instagram profile</a>
+              to share your business, offer and target audience.
+            </p>
+            <span class="hiw__chip hiw__chip--pink">Instagram</span>
+          </li>
+
+          <li class="hiw__step">
+            <span class="hiw__n">2</span>
+            <span class="hiw__icon" aria-hidden="true">🎬</span>
+            <h3 class="hiw__step-title">We make the video</h3>
+            <p class="hiw__text">
+              AI writes the script, draws the scenes and adds the English voice.
+              You get the reel within 48 hours.
+            </p>
+            <span class="hiw__chip hiw__chip--sun">Within 48 hours</span>
+          </li>
+
+          <li class="hiw__step">
+            <span class="hiw__n">3</span>
+            <span class="hiw__icon" aria-hidden="true">🚀</span>
+            <h3 class="hiw__step-title">You post it</h3>
+            <p class="hiw__text">
+              Download the reel and post it. Growth plan customers also get a calendar
+              that says what to post and when.
+            </p>
+            <span class="hiw__chip hiw__chip--lilac">Growth plan: posting calendar</span>
+          </li>
+        </ol>
+
+        <div class="hiw__cta">
+          <a class="hiw__btn" href="https://www.instagram.com/reelwala.in.60/" target="_blank" rel="noopener">Share your idea on Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. ABOUT + INSTAGRAM -->
+    <section class="sec sec--paper" id="about">
+      <div class="wrap about">
+        <div class="about__text">
+          <h2 class="sec__h" data-i18n="about_h2">We started with history for children</h2>
+          <p data-i18n="about_p1">At Reelwala, our roots are in creating history content for children. It taught us the most valuable lesson in digital marketing: getting a child to watch a video to the very end is incredibly hard—and if you can do that, you can capture anyone's attention.</p>
+          <p data-i18n="about_p2">Through our Instagram page @reelwala.in.60 and our client campaigns, we use striking AI-generated cartoon and anime visuals to help businesses and educators tell their stories. We took the exact retention skills required to entertain kids and adapted them to convert your customers. High retention, better engagement, and scroll-stopping visuals—that’s the Reelwala promise.</p>
+        </div>
+        <aside class="ig">
+          <div class="ig__top">
+            <span class="ig__avatar" aria-hidden="true">60</span>
+            <div>
+              <p class="ig__handle">@reelwala.in.60</p>
+              <p class="ig__desc" data-i18n="ig_desc">AI history videos for children, nursery to class 5</p>
+            </div>
+          </div>
+          <!--
+            Add your real numbers, then delete the word "hidden" from the next line.
+            Example: <dd>25K</dd>
+          -->
+          <dl class="ig__stats" hidden>
+            <div><dt data-i18n="st1">Followers</dt><dd>0</dd></div>
+            <div><dt data-i18n="st2">Videos posted</dt><dd>0</dd></div>
+            <div><dt data-i18n="st3">Total views</dt><dd>0</dd></div>
+          </dl>
+          <a class="btn btn--sun" data-ig href="https://www.instagram.com/reelwala.in.60/" target="_blank" rel="noopener"><span data-i18n="about_cta">Follow on Instagram</span></a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 7. FAQ -->
+    <section class="sec sec--paper" id="faq">
+      <div class="wrap faq">
+        <div class="faq__head">
+          <p class="showcase__eyebrow">Good to know</p>
+          <h2 class="sec__h">Your questions answered</h2>
+        </div>
+        <div class="faq__list">
+          <details>
+            <summary>What does Reelwala create?</summary>
+            <p>We create AI-generated cartoon and anime reels for Instagram, with a script, English voiceover, captions and post-ready editing.</p>
+          </details>
+          <details>
+            <summary>How quickly will I receive my reel?</summary>
+            <p>Most standard reels are planned and delivered within 48 hours after we receive your business details and offer.</p>
+          </details>
+          <details>
+            <summary>Can you make reels for my school or clinic?</summary>
+            <p>Yes. We create customer-facing reels for clinics and shops, and subject-based lesson videos for schools and tuition centres.</p>
+          </details>
+          <details>
+            <summary>Do I need to pay before seeing a sample?</summary>
+            <p>You can browse the sample reels on this page. Send your business details to receive an initial reel idea through Instagram or WhatsApp.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. CONTACT -->
+    <section class="sec sec--ink" id="contact">
+      <div class="wrap contact">
+        <div class="contact__text">
+          <h2 class="sec__h" data-i18n="contact_h2">Tell us what you sell</h2>
+          <p class="sec__lead" data-i18n="contact_lead">Visit us on Instagram or fill the form to request a sample reel idea for your business.</p>
+          <div class="contact__actions">
+            <a class="btn btn--wa" data-wa href="#contact">
+              <svg width="20" height="20" aria-hidden="true"><use href="#i-chat"/></svg>
+              <span data-i18n="cta_wa">Chat on WhatsApp</span>
+            </a>
+            <a class="contact__phone" data-phone href="tel:+91-9229526967">
+              <svg width="22" height="22" aria-hidden="true"><use href="#i-phone"/></svg>
+              <span data-phone-text>+91-9229526967</span>
+            </a>
+          </div>
+        </div>
+
+        <form class="form" id="leadForm">
+          <label class="field">
+            <span data-i18n="f_name">Your name</span>
+            <input name="name" type="text" autocomplete="name" required>
+          </label>
+          <label class="field">
+            <span>Your contact</span>
+            <input name="contact" type="text" autocomplete="tel email" placeholder="Phone number or email" required>
+          </label>
+          <label class="field">
+            <span data-i18n="f_biz">Business name or type</span>
+            <input name="biz" type="text" autocomplete="organization">
+          </label>
+          <label class="field">
+            <span data-i18n="f_plan">Plan you are interested in</span>
+            <select name="plan">
+              <option value="Not sure yet" data-i18n="o0">Not sure yet</option>
+              <option value="Starter">Starter</option>
+              <option value="Growth">Growth</option>
+              <option value="School pack" data-i18n="o3">School pack</option>
+            </select>
+          </label>
+          <label class="field">
+            <span data-i18n="f_msg">Your message</span>
+            <textarea name="msg" rows="3"></textarea>
+          </label>
+          <button class="btn btn--wa form__send" type="submit">
+            <svg width="20" height="20" aria-hidden="true"><use href="#i-chat"/></svg>
+            <span data-i18n="f_send">Send Message</span>
+          </button>
+          <p class="form__note" data-i18n="f_note">This opens our Instagram profile.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot__in">
+      <p data-i18n="foot">© 2026 Reelwala. AI videos for small businesses in India.</p>
+    </div>
+  </footer>
+
+  <a class="wa-float" data-wa href="#contact" aria-label="Open Instagram">
+    <svg width="28" height="28" aria-hidden="true"><use href="#i-chat"/></svg>
+  </a>
+
+  <a class="mascot-float" href="chatbot.html" aria-label="Ask Chatbot">
+    <img src="mascot.png" alt="">
+    <span class="mascot-float__label">Ask Chatbot</span>
+  </a>
+
+  <!-- Video player -->
+  <dialog class="player" id="player" aria-label="Video player">
+    <div class="player__in">
+      <button class="player__close" id="playerClose" type="button" aria-label="Close">✕</button>
+      <div id="playerBody"></div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>

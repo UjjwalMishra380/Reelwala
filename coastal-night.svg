@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f36d91"/>
+      <stop offset=".48" stop-color="#f5a17f"/>
+      <stop offset=".72" stop-color="#62cfc9"/>
+      <stop offset="1" stop-color="#1b3150"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#28617a"/>
+      <stop offset="1" stop-color="#17162f"/>
+    </linearGradient>
+    <linearGradient id="distantCity" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#4c315e"/>
+      <stop offset="1" stop-color="#201e3e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <path d="M0 560Q280 530 560 565T1120 555t480 8v337H0Z" fill="url(#water)"/>
+  <path d="M0 510h75v-56h42v56h36v-94h54v94h35v-72h49v72h50v-130h61v130h40v-64h57v64h54v-101h72v101h38v-48h54v48h44v-115h68v115h40v-73h58v73h49v-143h73v143h38v-78h53v78h38v-112h62v112h49v-62h52v62h48v-97h70v97h58v-47h51v47h52v390H0Z" fill="url(#distantCity)" opacity=".92"/>
+  <path d="M0 626h85V542h68v84h44V518h82v108h42V566h66v60h55V496h77v130h48V550h79v76h42V522h83v104h54V575h69v51h38V503h90v123h46V544h78v82h42V520h88v106h49V566h69v60h77v274H0Z" fill="#191831"/>
+  <g fill="#ffc857" opacity=".8">
+    <path d="M106 561h9v16h-9zm56 3h10v20h-10zm81-24h10v17h-10zm79 37h10v17h-10zm91-42h12v19h-12zm58 53h10v17h-10zm103-30h12v18h-12zm65-40h12v19h-12zm107 52h12v17h-12zm99-34h12v19h-12zm77 42h12v18h-12zm91-74h12v19h-12zm70 48h12v19h-12zm96-31h12v18h-12zm75 53h12v18h-12zm94-36h12v18h-12z"/>
+  </g>
+  <g fill="none" stroke="#61d6d0" stroke-linecap="round" opacity=".55">
+    <path d="M45 685h310m-220 34h405m-90 35h280m370-75h360m-470 39h560m-280 40h330" stroke-width="4"/>
+    <path d="M120 790h250m440-20h340m-650 54h470m260-18h220" stroke-width="2"/>
+  </g>
+  <g fill="none" stroke="#17162f" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M128 700Q155 570 149 430" stroke-width="18"/>
+    <path d="M149 442q-78-30-104-91 70 13 111 68-10-72 26-119 31 63 2 126 43-59 115-65-29 69-109 88" fill="#17162f" stroke-width="12"/>
+    <path d="M1454 694q-33-140-12-285" stroke-width="18"/>
+    <path d="M1443 423q-74-37-94-101 70 19 103 77-1-73 41-115 24 65-10 126 49-54 120-52-37 66-120 77" fill="#17162f" stroke-width="12"/>
+  </g>
+</svg>
